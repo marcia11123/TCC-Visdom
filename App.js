@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { FontAwesome } from '@expo/vector-icons';
+import { Ionicons } from '@expo/vector-icons';
 import Tela1 from './components/Tela1.js';
 import Tela2 from './components/Tela2.js';
 
@@ -13,7 +13,7 @@ export default function App() {
       <Tabs.Navigator
         screenOptions={{
           tabBarStyle:{
-            backgroundColor:'#181b1cbd',
+            backgroundColor:'#001621',
             height: 60
           },
           tabBarLabelStyle:{
@@ -25,10 +25,10 @@ export default function App() {
         }}
       >
         <Tabs.Screen
-          name='Tela 1'
+          name='Agendaa'
           component={Tela1}
           options={{
-            tabBarIcon: ({color, size})=>(<FontAwesome name="th-large" color={color} size={size} />)
+            tabBarIcon: ({color, size})=>(<Ionicons name="calendar" color={color} size={size} />)
           }}
         />
         <Tabs.Screen
